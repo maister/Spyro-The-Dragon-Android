@@ -12,16 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SpyroTheDragon"
         tools:targetApi="31">
+
+        <activity
+            android:name=".VideoEasterEggActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:screenOrientation="landscape" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

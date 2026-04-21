@@ -65,6 +65,7 @@ class WorldsFragment : Fragment() {
                         when (parser.name) {
                             "world" -> currentWorld = World()
                             "name" -> currentWorld?.name = parser.nextText()
+                            // AQUÍ ESTABA EL ERROR: Asegúrate de que tu clase World tenga 'description'
                             "description" -> currentWorld?.description = parser.nextText()
                             "image" -> currentWorld?.image = parser.nextText()
                         }
